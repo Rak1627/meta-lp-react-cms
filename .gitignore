@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+.devserver.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Images - only ignore originals, commit optimized ones
+public/images/*
+!public/images/optimized/
+!public/images/result/
+!public/images/result/*.png
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+public/Design Updates and Image Adjustments *.mp4
+
