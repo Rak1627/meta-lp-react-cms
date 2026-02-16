@@ -1,9 +1,9 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { IconChevron } from '../../components/Icons'
 import { GetTicketButton } from '../components/GetTicketButton'
 
-export function FaqSection({ items }) {
+export function FaqSection({ heading, items }) {
   const [openFaqIndex, setOpenFaqIndex] = useState(-1)
 
   const toggleFaq = (index) => {
@@ -13,7 +13,7 @@ export function FaqSection({ items }) {
   return (
     <section className="section faqSection">
       <div className="container">
-        <h2 className="faqTitle"><span className='gradientText'> Frequently Asked Questions</span></h2>
+        <h2 className="faqTitle"><span className="gradientText"> {heading}</span></h2>
         <div className="faq">
           {items.map((item, idx) => {
             const open = openFaqIndex === idx
@@ -48,6 +48,7 @@ export function FaqSection({ items }) {
 }
 
 FaqSection.propTypes = {
+  heading: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       q: PropTypes.string.isRequired,

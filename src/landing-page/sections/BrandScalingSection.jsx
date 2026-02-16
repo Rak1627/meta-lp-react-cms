@@ -1,50 +1,44 @@
+﻿import PropTypes from 'prop-types'
 import { GetTicketButton } from '../components/GetTicketButton'
+import { renderTextWithHighlights } from '../utils/renderTextWithHighlights'
 
-export function BrandScalingSection() {
+export function BrandScalingSection({ content }) {
   return (
     <section className="brandScalingBg">
       <div className="container brandScalingWrap">
         <div className="brandScalingOuter">
           <div className="brandScalingInner">
-            <div className="brandScalingQuote" aria-hidden="true"> <span className='gradientText'>
-              &ldquo;</span>
+            <div className="brandScalingQuote" aria-hidden="true">
+              <span className="gradientText">&ldquo;</span>
             </div>
 
-            <h2 className="brandScalingTitle">
-             <span className="gradientText"> Only 3%</span> of your market wakes up <span className='gradientText'> ready to buy</span>
-            </h2>
-             
+            <h2 className="brandScalingTitle">{renderTextWithHighlights(content.title)}</h2>
 
-            <p className="brandScalingText">
-                if you <strong><span className='gradientText'> don’t have a system</span></strong> for the other <strong><span className='gradientText'> 97%,</span></strong> you’re lighting your advertising <strong><span className='gradientText'> budget on fire</span></strong>
-            </p>
-            <p className="brandScalingText">
-              Because here’s what actually happens:
-            </p>
-            <p className="brandScalingText">
-              • The 3% who are ready to buy now will click, compare you
-to 3 other tabs, and choose whoever feels the most
-dialed‑in.
-            </p>
-            <p className="brandScalingText">
-              • The next 40% are interested but distracted—they need
-follow‑up, reminders, and proof before they move.
+            {content.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="brandScalingText">
+                {renderTextWithHighlights(paragraph)}
+              </p>
+            ))}
 
-
+            <p className="brandScalingHighlight">
+              {renderTextWithHighlights(content.highlight)}
             </p>
-            <p className="brandScalingText"> • The remaining 57% don’t even know they have a problem
-yet—until your content and ads make it painfully obvious.</p>
-            <p className="brandScalingHighlight"> 
-             <span className='gradientText'> Your Meta ads shouldn’t just “get traffic.”</span>
-            </p>
-            <p className="brandScalingText">They should push all three groups into one simple GHL
-system that captures them, follows up with them, and turns
-them into booked calls while you work—or sleep.</p>
+            <p className="brandScalingText">{renderTextWithHighlights(content.footer)}</p>
 
-            <GetTicketButton />
+            <GetTicketButton label={content.buttonLabel} />
           </div>
         </div>
       </div>
     </section>
   )
+}
+
+BrandScalingSection.propTypes = {
+  content: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
+    highlight: PropTypes.string.isRequired,
+    footer: PropTypes.string.isRequired,
+    buttonLabel: PropTypes.string,
+  }).isRequired,
 }

@@ -1,16 +1,6 @@
-import PropTypes from 'prop-types'
+﻿import PropTypes from 'prop-types'
 import { EARLYBIRD_TARGET_ISO, LOGO_URL } from './config'
-import {
-  HERO_VIDEO_PLAYER_ID,
-  faqItems,
-  learnRows,
-  pricingCoreItems,
-  pricingExcludedItems,
-  pricingVipExcludedItems,
-  pricingVipItems,
-  proofVideos,
-  testimonialRows,
-} from './data'
+import landingContent from '../content/landing.json'
 import { AboutSection } from './sections/AboutSection'
 import { BrandScalingSection } from './sections/BrandScalingSection'
 import { FaqSection } from './sections/FaqSection'
@@ -35,32 +25,44 @@ export function LandingPage({ onOpenTypeform }) {
     onOpenTypeform(kind)
   }
 
+  const {
+    hero,
+    trade,
+    brandScaling,
+    rock,
+    about,
+    learn,
+    testimonials,
+    proof,
+    pricing,
+    giveaway,
+    guarantee,
+    why,
+    limited,
+    host,
+    faq,
+  } = landingContent
+
   return (
     <>
       <Topbar logoUrl={LOGO_URL} earlybirdTargetIso={EARLYBIRD_TARGET_ISO} />
 
       <main>
-        <HeroSection heroPlayerId={HERO_VIDEO_PLAYER_ID} />
-        <TradeSection />
-        <BrandScalingSection />
-        <RockSection />
-        <AboutSection />
-        <LearnSection rows={learnRows} />
-        <TestimonialsSection rows={testimonialRows} />
-        <ProofSection videos={proofVideos} />
-        <PricingSection
-          coreItems={pricingCoreItems}
-          excludedItems={pricingExcludedItems}
-          vipExcludedItems={pricingVipExcludedItems}
-          vipItems={pricingVipItems}
-          onOpenTypeform={openTypeform}
-        />
-        <GiveawaySection />
-        <GuaranteeSection />
-        <WhySection />
-        <LimitedSection />
-        <HostSection />
-        <FaqSection items={faqItems} />
+        <HeroSection heroPlayerId={hero.videoPlayerId} content={hero} />
+        <TradeSection content={trade} />
+        <BrandScalingSection content={brandScaling} />
+        <RockSection content={rock} />
+        <AboutSection content={about} />
+        <LearnSection heading={learn.heading} rows={learn.rows} />
+        <TestimonialsSection heading={testimonials.heading} rows={testimonialRows} />
+        <ProofSection content={proof} />
+        <PricingSection content={pricing} onOpenTypeform={openTypeform} />
+        <GiveawaySection content={giveaway} />
+        <GuaranteeSection content={guarantee} />
+        <WhySection content={why} />
+        <LimitedSection content={limited} />
+        <HostSection content={host} />
+        <FaqSection heading={faq.heading} items={faq.items} />
         <FooterSection logoUrl={LOGO_URL} />
       </main>
     </>
@@ -70,3 +72,4 @@ export function LandingPage({ onOpenTypeform }) {
 LandingPage.propTypes = {
   onOpenTypeform: PropTypes.func.isRequired,
 }
+

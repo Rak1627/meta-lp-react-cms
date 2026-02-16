@@ -1,0 +1,381 @@
+﻿{
+  "seo": {
+    "title": "The Brand Scaling Bootcamp - Ahmed Damouni",
+    "description": "The client-getting system that nobody was meant to leak. Free training + cheat sheet to plug into your Meta + GHL system."
+  },
+  "hero": {
+    "pill": "Stop Wasting Money on Agencies",
+    "title": "The client getting system that nobody was meant to leak",
+    "subtitle": "The Secret [[Black Box]] Behind Profitable Meta Ads",
+    "belowVideo": "For [[Operators]] or [[Founders]] who are tired of feast-or-famine [[clients]].",
+    "buttonLabel": "MAKE MY ADS PRINT MONEY",
+    "videoPlayerId": "69668f6b1fad4f3937c24088"
+  },
+  "trade": {
+    "title": "How Long Are You Going to Let Broken Marketing Decide Your Income?",
+    "subtitle": "Be honest with yourself for a second.",
+    "bullets": [
+      "The [[lucky]] month where your ads somehow [[work...]] followed by two months of crickets.",
+      "The agency that sends screenshots and buzzwords but [[not buyers]] in your Stripe.",
+      "The campaigns that get clicks, likes, and comments but almost [[no booked calls.]]",
+      "The feeling that you're smart enough to fix this, but you [[don't know]] what to [[change.]]",
+      "The quiet panic every time you check Ads Manager and see [[money]] going [[out, not]] coming [[back.]]"
+    ],
+    "bottomStrong": "[[You're not crazy for wanting predictable clients and cashflow.]]",
+    "bottom": "You've just never been shown a [[simple system]] that makes Meta ads [[work]] for you, not against you.",
+    "image": "image-562"
+  },
+  "brandScaling": {
+    "title": "Only [[3%]] of your market wakes up [[ready to buy]]",
+    "paragraphs": [
+      "If you [[don't have a system]] for the other [[97%]], you're lighting your advertising [[budget on fire]].",
+      "Because here's what actually happens:",
+      "The 3% who are ready to buy now will click, compare you to 3 other tabs, and choose whoever feels the most dialed-in.",
+      "The next 40% are interested but distracted - they need follow-up, reminders, and proof before they move.",
+      "The remaining 57% don't even know they have a problem yet - until your content and ads make it painfully obvious."
+    ],
+    "highlight": "[[Your Meta ads shouldn't just \"get traffic.\"]]",
+    "footer": "They should push all three groups into one simple GHL system that captures them, follows up with them, and turns them into booked calls while you work - or sleep.",
+    "buttonLabel": "MAKE MY ADS PRINT MONEY"
+  },
+  "rock": {
+    "title": "Follow Along as I Build\n a Profit Machine From Scratch",
+    "kickers": [
+      "I'm building this Meta ads system the same way you'd have to",
+      "no secret list, no \"guru\" shortcuts.",
+      "I'm starting from:"
+    ],
+    "zeroList": [
+      "No warm audience or secret email list",
+      "No agency team doing the work for me",
+      "No giant budget to hide bad decisions"
+    ],
+    "highlight": "And I'm documenting everything as I turn cold traffic into booked calls using Meta + GHL.",
+    "insideTitle": "You'll see inside the training:",
+    "insideItems": [
+      "The exact ad setup I use to go from testing to profitable scaling",
+      "How I turn new leads into conversations and clients using simple automations",
+      "The real numbers, wins, and flops so you can copy what works and avoid what doesn't"
+    ],
+    "buttonLabel": "Get Started",
+    "image": "overlay-border"
+  },
+  "about": {
+    "heading": "About the Training & Cheat Sheet",
+    "cards": [
+      {
+        "label": "WHAT",
+        "text": "A free on-demand training + Meta Ads Psychology Cheat Sheet that shows you how to turn cold traffic into booked calls using a simple Meta + GHL system. Watch the short VSL, follow the steps, and keep the cheat sheet open as you build."
+      },
+      {
+        "label": "WHERE",
+        "text": "100% online. You'll get instant access to the video and a downloadable PDF you can reuse every time you launch or fix a campaign."
+      },
+      {
+        "label": "WHEN",
+        "text": "Right now. Enter your email, hit play, and start installing the system in the next 30 minutes - no live webinar, no wait, no timezone drama."
+      }
+    ]
+  },
+  "learn": {
+    "heading": "What You'll Learn in the Training",
+    "rows": [
+      {
+        "number": "01",
+        "titleLines": ["Part 1: The Psychology That Makes Meta Ads Work"],
+        "image": "part-1",
+        "imageMobile": "part-1-trim",
+        "desc": "Learn why understanding your buyer beats copying \"winning\" ads.",
+        "bullets": [
+          "Why most freelancers and agencies only speak to the 3% ready to buy now",
+          "How to map your buyer's fears, goals, and objections before you write a single line of copy",
+          "How to position your offer so it feels \"made for them,\" even in a crowded niche"
+        ]
+      },
+      {
+        "number": "02",
+        "reverse": true,
+        "titleLines": ["Part 2: Psychology Into a Simple Meta + GHL System"],
+        "image": "part-2",
+        "imageMobile": "part-2-trim",
+        "desc": "See the full system you'll copy from the training and cheat sheet.",
+        "bullets": [
+          "The exact campaign structure to turn cold traffic into booked calls",
+          "The GHL automations that follow up, nurture, and close while you're off the laptop",
+          "How to scale spend without breaking your funnel or burning your audience"
+        ]
+      },
+      {
+        "number": "03",
+        "titleLines": ["Part 3: Running Ads That Actually Turn Into Money"],
+        "image": "part-3",
+        "imageMobile": "part-3-trim",
+        "desc": "Understand how to set up profitable Meta campaigns and know exactly what to fix when they tank.",
+        "bullets": [
+          "The campaign setup I use so every dollar has a job",
+          "How to read your numbers in Ads Manager without getting overwhelmed",
+          "The simple tweaks that turn \"nice\" campaigns into ones that print buyers"
+        ]
+      },
+      {
+        "number": "04",
+        "reverse": true,
+        "titleLines": ["Part 4: Building the Follow-Up System Around Your Ads"],
+        "image": "part-4",
+        "imageMobile": "part-4-trim",
+        "desc": "Transform random leads into a steady flow of clients using GHL.",
+        "bullets": [
+          "The pipeline and automations that take new leads from click to conversation to client",
+          "How to stop being the bottleneck by letting the system chase, remind, and nurture for you",
+          "The exact follow-up rhythm that works for both hungry freelancers and busy agency owners"
+        ]
+      },
+      {
+        "number": "05",
+        "cta": true,
+        "titleLines": ["Part 5: Scaling Without Burning Out or Burning Your Audience"],
+        "image": "part-5",
+        "imageMobile": "part-5-trim",
+        "desc": "Fast-track what's working instead of restarting from scratch every month.",
+        "bullets": [
+          "How to safely scale spend without wrecking your cost per lead",
+          "When to duplicate, when to kill, and when to just let Meta cook",
+          "How this system becomes an asset you can plug into any offer you launch next"
+        ]
+      }
+    ]
+  },
+    "testimonials": {
+    "heading": "See What Regular People Are Getting With This System",
+    "rows": [
+      {
+        "images": [
+          "/images/result/result1.png",
+          "/images/result/result2.png",
+          "/images/result/result3.png",
+          "/images/result/result4.png",
+          "/images/result/result5.png",
+          "/images/result/result6.png",
+          "/images/result/result7.png",
+          "/images/result/result8.png",
+          "/images/result/result9.png",
+          "/images/result/result10.png",
+          "/images/result/result11.png",
+          "/images/result/result12.png",
+          "/images/result/result13.png"
+        ]
+      },
+      {
+        "images": [
+          "/images/result/result14.png",
+          "/images/result/result15.png",
+          "/images/result/result16.png",
+          "/images/result/result17.png",
+          "/images/result/result18.png",
+          "/images/result/result19.png",
+          "/images/result/result20.png",
+          "/images/result/result21.png",
+          "/images/result/result22.png",
+          "/images/result/result23.png",
+          "/images/result/result24.png",
+          "/images/result/result25.png"
+        ]
+      }
+    ]
+  },
+  "proof": {
+    "title": "These aren't \"unicorn\" clients. They're freelancers and operators who plugged a simple Meta + GHL system into their offers.",
+    "kicker": "And if you need extra proof...",
+    "desc": "In the video, I walk through real dashboards, campaigns, and pipelines so you can see how we turn attention into predictable income.",
+    "videos": [
+      {
+        "videoSrc": "/videos/MEEZY.mp4",
+        "caption": "I have worked with many teams in the past but none of them come close to Ahmed and his team"
+      },
+      {
+        "videoSrc": "/videos/MBG.mp4",
+        "caption": "A lot of it is off my plate now - not only that you guys put all of the time in the background to build it all up"
+      },
+      {
+        "videoSrc": "/videos/RANA.mp4",
+        "caption": "they really take the time to understand my brand and they are super easy to deal with"
+      },
+      {
+        "videoSrc": "/videos/BRAZIL.mp4",
+        "caption": "Thanks to Ahmed i've done more money this month then i could've ever with my old job"
+      },
+      {
+        "videoSrc": "/videos/DR IAN.mp4",
+        "caption": "I believe your giving me the structure as needed. As you said a Ferrari engine doesn't fit in a Toyota"
+      },
+      {
+        "videoSrc": "/videos/GMP JOBS.mp4",
+        "caption": "Today we picked up a few new clients, so today i spent most of the day meeting up with them and chasing suppliers"
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Here's What's Inside",
+    "sub": "Plug the system straight into your business.",
+    "general": {
+      "price": "$0",
+      "name": "",
+      "meta": "",
+      "buttonText": "YES - IT'S ACTUALLY FREE",
+      "coreItems": [
+        "Meta Ads Psychology Cheat Sheet (PDF you can reuse for every offer)",
+        "Step-by-step VSL showing the full Meta + GHL setup",
+        "The exact campaign structure, audiences, and basic settings I use",
+        "The follow-up flow that turns new leads into booked calls automatically",
+        "A simple checklist to audit your current ads, landing page, and GHL in under 60 minutes"
+      ],
+      "excludedItems": [
+        "No live webinar to sit through",
+        "No high-pressure sales call you have to book first",
+        "No agency retainer, minimum ad spend, or tech headache"
+      ]
+    },
+    "vip": {
+      "price": "$197",
+      "name": "Meta Ads & Funnel Audit (1:1 Call)",
+      "meta": "For freelancers and operators who want me to rip apart their current setup and rebuild it for scale.",
+      "buttonText": "BOOK MY 1:1 AUDIT",
+      "items": [
+        "60-90 minute Zoom call where we screenshare your Meta, funnel, and GHL",
+        "Full audit of your offer, ads, targeting, and follow-up flows",
+        "A custom action plan to fix leaks and turn your traffic into booked calls",
+        "Loom recap with clear next steps so you're not guessing after the call",
+        "Priority access to me on email for 7 days while you implement"
+      ],
+      "excludedItems": [
+        "No done-for-you media buying",
+        "No long-term contract or retainer"
+      ]
+    }
+  },
+  "giveaway": {
+    "heading": "Everyone Who Grabs the Training Is\nAutomatically Entered to Win:",
+    "note": "Download the free training + cheat sheet today\nand you're in the draw automatically.",
+    "prizes": [
+      {
+        "image": "laptop1",
+        "alt": "Three brand new MacBooks",
+        "title": "Prize 1 - 12 Months of GHL Free",
+        "description": "Run your entire client-getting system with zero software bill for a full year."
+      },
+      {
+        "image": "ahmed1",
+        "alt": "Brand new Rolex",
+        "title": "Prize 2 - Live Intensive in Dubai / Bali / Sydney",
+        "description": "Spend a full day in person rebuilding your offer, funnel, and Meta ads with me, start to finish."
+      },
+      {
+        "image": "jade1",
+        "alt": "Private dinner with Brez in Miami",
+        "title": "Prize 3 - Traffic Booster Fund",
+        "description": "Get your first month of ad spend paid for so you can test the system at speed instead of inching along."
+      }
+    ]
+  },
+  "guarantee": {
+    "title": "My This Won't Waste Your Time Promise",
+    "paragraphs": [
+      "If you watch the training and go through the cheat sheet and still feel like you have no clearer path to fixing your ads, you owe me nothing.",
+      "If you book the 1:1 audit and, by the end of the call, you don't feel like you know exactly what to do next, I'll refund the 197, no questions asked.",
+      "Just reply to your confirmation email within 7 days and say refund please, you'll have your money back within 24 hours.",
+      "I can make this promise because I know the game you're playing and I've seen what happens when people finally install a real system.",
+      "If you show up and do the work, results stop being a mystery and start being math.",
+      "You handle the showing up. I'll handle the rest."
+    ]
+  },
+  "why": {
+    "title": "\"Why Is This Free?\"",
+    "paragraphs": [
+      "Fair question.",
+      "I've seen people charge 500+ for less than what you're getting in this training and cheat sheet.",
+      "Here's my logic:",
+      "I'm not trying to get rich off a PDF.",
+      "I'm trying to find the freelancers and operators who are serious about fixing their client-getting machine.",
+      "Some of you will use the free training, get results, and never pay me a cent but you'll remember who helped you.",
+      "Some of you will want help installing or scaling the system and book the 1:1 audit or a bigger package.",
+      "Both outcomes are wins for me.",
+      "Giving this away filters out the people who aren't serious and lets me overdeliver for the ones who are.",
+      "So take the free training, steal the system, and if you want my hands on your business after, you'll know where to find me."
+    ],
+    "image": "2ndimage",
+    "imageAlt": "Why this price"
+  },
+  "limited": {
+    "title": "This Won't Be Free Forever",
+    "lead": "Access to the free training may close once we hit our max number of users I can realistically support.",
+    "cards": [
+      {
+        "icon": "warning",
+        "text": "If you're still stuck in feast-or-famine six months from now, it won't be because this didn't exist - it'll be because you scrolled past it."
+      },
+      {
+        "icon": "money",
+        "text": "The 1:1 Meta Ads & Funnel Audit stays at 197 for now - but once the calendar is full, the price goes up."
+      },
+      {
+        "icon": "gift",
+        "text": "Giveaway entries for the GHL year, live intensive, and traffic booster are only valid for people who grab the training during this round."
+      }
+    ],
+    "footer": [
+      "Last time I opened this up, over 300,000 people hit the funnel in a month and my calendar was slammed with multiple audits a day.",
+      "I refuse to turn this into another factory where we rush through calls and skim over your numbers.",
+      "So now we run this in controlled waves. We turn the funnel on, let a limited batch in, do the work properly, then turn it off again until we're ready for the next round.",
+      "If you're seeing this, it means the doors are open - for now."
+    ]
+  },
+  "host": {
+    "heading": "Meet Your Host",
+    "image": "/images/optimized/meetyourhost-picture.png",
+    "imageAlt": "Brez, your host",
+    "intro": [
+      "A few years ago, I was in the same loop you're in now.",
+      "Good at what I do, smart enough to figure things out, but still stuck in:"
+    ],
+    "stuckBullets": [
+      "Feast-or-famine months",
+      "Chasing referrals and random inbound",
+      "Letting cheap agencies guess with my money"
+    ],
+    "pivot": "What finally clicked wasn't some secret hack. It was realizing this game is actually simple if you care enough to own it yourself:",
+    "systemBullets": [
+      "Know your buyer better than anyone else",
+      "Do basic math on what you can pay to get one",
+      "Learn one ads dashboard",
+      "Plug it all into a system that follows up for you"
+    ],
+    "outro": [
+      "That's it. No \"media buying wizard,\" no 20-person agency.",
+      "You already know your customers better than any $1K-a-month agency ever will.",
+      "All you're missing is a clear way to turn that knowledge into ads and a funnel that bring buyers in every day.",
+      "This training and cheat sheet are built to give you exactly that - without fluff, without jargon, and without pretending this is harder than it really is."
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "I have no experience. Can I still do this?",
+        "a": "That's literally the point. The bootcamp is designed to walk complete beginners through the exact steps - live - so you can copy what I'm doing and start signing clients."
+      },
+      {
+        "q": "How much time do I need to commit?",
+        "a": "Each session is 60-90 minutes, plus optional Q&A / VIP breakouts. You can watch live or catch the replays."
+      },
+      {
+        "q": "What if I can't make it live?",
+        "a": "You'll get access to the replays so you can watch on your own schedule."
+      },
+      {
+        "q": "Will this work in my country?",
+        "a": "Yep. The model works worldwide - we have students from the US, Serbia, the UK, Canada, and more."
+      }
+    ]
+  }
+}
+

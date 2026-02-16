@@ -1,0 +1,263 @@
+﻿backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: landing
+    label: Landing Page
+    files:
+      - name: landing
+        label: Landing Content
+        file: src/content/landing.json
+        format: json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Pill, name: pill, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: 'Subtitle (use [[highlight]])', name: subtitle, widget: string }
+              - { label: 'Below Video (use [[highlight]])', name: belowVideo, widget: string }
+              - { label: Button Label, name: buttonLabel, widget: string }
+              - { label: Video Player ID, name: videoPlayerId, widget: string }
+          - label: Trade Section
+            name: trade
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - label: 'Bullets (use [[highlight]])'
+                name: bullets
+                widget: list
+                field: { label: Bullet, name: bullet, widget: string }
+              - { label: 'Bottom Strong (use [[highlight]])', name: bottomStrong, widget: string }
+              - { label: 'Bottom (use [[highlight]])', name: bottom, widget: string }
+              - { label: 'Image (optimized key or /images/uploads/...)', name: image, widget: string }
+          - label: Brand Scaling
+            name: brandScaling
+            widget: object
+            fields:
+              - { label: 'Title (use [[highlight]])', name: title, widget: string }
+              - label: 'Paragraphs (use [[highlight]])'
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - { label: 'Highlight (use [[highlight]])', name: highlight, widget: string }
+              - { label: Footer, name: footer, widget: text }
+              - { label: Button Label, name: buttonLabel, widget: string }
+          - label: Rock Section
+            name: rock
+            widget: object
+            fields:
+              - { label: 'Title (line breaks allowed)', name: title, widget: string }
+              - label: Kickers
+                name: kickers
+                widget: list
+                field: { label: Kicker, name: kicker, widget: string }
+              - label: 'Zero List'
+                name: zeroList
+                widget: list
+                field: { label: Item, name: item, widget: string }
+              - { label: Highlight, name: highlight, widget: text }
+              - { label: 'Inside Title', name: insideTitle, widget: string }
+              - label: 'Inside Items'
+                name: insideItems
+                widget: list
+                field: { label: Item, name: item, widget: string }
+              - { label: Button Label, name: buttonLabel, widget: string }
+              - { label: 'Image (optimized key or /images/uploads/...)', name: image, widget: string }
+          - label: About Section
+            name: about
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: Learn Section
+            name: learn
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - label: Rows
+                name: rows
+                widget: list
+                fields:
+                  - { label: Number, name: number, widget: string }
+                  - { label: Reverse, name: reverse, widget: boolean, required: false }
+                  - { label: CTA Row, name: cta, widget: boolean, required: false }
+                  - label: 'Title Lines'
+                    name: titleLines
+                    widget: list
+                    field: { label: Line, name: line, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - label: Bullets
+                    name: bullets
+                    widget: list
+                    field: { label: Bullet, name: bullet, widget: string }
+                  - { label: 'Image (optimized key or /images/uploads/...)', name: image, widget: string }
+                  - { label: 'Mobile Image (optional)', name: imageMobile, widget: string, required: false }
+          - label: Testimonials
+            name: testimonials
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - label: Rows
+                name: rows
+                widget: list
+                fields:
+                  - label: Images
+                    name: images
+                    widget: list
+                    field: { label: Image, name: image, widget: string }
+          - label: Proof
+            name: proof
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: text }
+              - { label: Kicker, name: kicker, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - label: Videos
+                name: videos
+                widget: list
+                fields:
+                  - { label: Video Src, name: videoSrc, widget: string }
+                  - { label: Caption, name: caption, widget: string }
+          - label: Pricing
+            name: pricing
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Subheading, name: sub, widget: string }
+              - label: General
+                name: general
+                widget: object
+                fields:
+                  - { label: Price, name: price, widget: string }
+                  - { label: Name, name: name, widget: string, required: false }
+                  - { label: Meta, name: meta, widget: string, required: false }
+                  - { label: Button Text, name: buttonText, widget: string }
+                  - label: Core Items
+                    name: coreItems
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+                  - label: Excluded Items
+                    name: excludedItems
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+              - label: VIP
+                name: vip
+                widget: object
+                fields:
+                  - { label: Price, name: price, widget: string }
+                  - { label: Name, name: name, widget: string }
+                  - { label: Meta, name: meta, widget: text }
+                  - { label: Button Text, name: buttonText, widget: string }
+                  - label: Items
+                    name: items
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+                  - label: Excluded Items
+                    name: excludedItems
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+          - label: Giveaway
+            name: giveaway
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Note, name: note, widget: string }
+              - label: Prizes
+                name: prizes
+                widget: list
+                fields:
+                  - { label: 'Image (optimized key or /images/uploads/...)', name: image, widget: string }
+                  - { label: Alt, name: alt, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+          - label: Guarantee
+            name: guarantee
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+          - label: Why Section
+            name: why
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: Paragraphs
+                name: paragraphs
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - { label: 'Image (optimized key or /images/uploads/...)', name: image, widget: string }
+              - { label: 'Image Alt', name: imageAlt, widget: string }
+          - label: Limited Section
+            name: limited
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Lead, name: lead, widget: string }
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: 'Icon (emoji or key: warning/money/gift)', name: icon, widget: string }
+                  - { label: Text, name: text, widget: text }
+              - label: Footer
+                name: footer
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+          - label: Host Section
+            name: host
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: 'Image (URL or /images/uploads/...)', name: image, widget: string }
+              - { label: 'Image Alt', name: imageAlt, widget: string }
+              - label: Intro
+                name: intro
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - label: 'Stuck Bullets'
+                name: stuckBullets
+                widget: list
+                field: { label: Item, name: item, widget: string }
+              - { label: Pivot, name: pivot, widget: text }
+              - label: 'System Bullets'
+                name: systemBullets
+                widget: list
+                field: { label: Item, name: item, widget: string }
+              - label: Outro
+                name: outro
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+          - label: FAQ
+            name: faq
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Question, name: q, widget: string }
+                  - { label: Answer, name: a, widget: text }

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+﻿import { useState, useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 /**
@@ -30,6 +30,7 @@ export function Image({
   const [isLoaded, setIsLoaded] = useState(false)
   const [isInView, setIsInView] = useState(priority) // Priority images load immediately
   const imgRef = useRef(null)
+  const isDirectSrc = src.startsWith('/') || src.startsWith('http') || src.includes('.')
 
   useEffect(() => {
     if (priority) return // Skip observer for priority images
@@ -73,23 +74,9 @@ export function Image({
       }}
     >
       {isInView && (
-        <picture>
-          {/* Modern format - AVIF (best compression, ~30% smaller than WebP) */}
-          <source
-            srcSet={`${basePath}/${src}.avif`}
-            type="image/avif"
-          />
-
-          {/* WebP with responsive sizes */}
-          <source
-            srcSet={webpSrcSet}
-            sizes={sizes}
-            type="image/webp"
-          />
-
-          {/* Fallback to WebP 800w */}
+        isDirectSrc ? (
           <img
-            src={`${basePath}/${src}-800w.webp`}
+            src={src}
             alt={alt}
             loading={priority ? 'eager' : loading}
             decoding="async"
@@ -102,7 +89,38 @@ export function Image({
               height: 'auto',
             }}
           />
-        </picture>
+        ) : (
+          <picture>
+            {/* Modern format - AVIF (best compression, ~30% smaller than WebP) */}
+            <source
+              srcSet={`${basePath}/${src}.avif`}
+              type="image/avif"
+            />
+
+            {/* WebP with responsive sizes */}
+            <source
+              srcSet={webpSrcSet}
+              sizes={sizes}
+              type="image/webp"
+            />
+
+            {/* Fallback to WebP 800w */}
+            <img
+              src={`${basePath}/${src}-800w.webp`}
+              alt={alt}
+              loading={priority ? 'eager' : loading}
+              decoding="async"
+              onLoad={() => setIsLoaded(true)}
+              style={{
+                opacity: isLoaded ? 1 : 0,
+                transition: 'opacity 0.3s ease-in-out',
+                display: 'block',
+                width: '100%',
+                height: 'auto',
+              }}
+            />
+          </picture>
+        )
       )}
     </div>
   )

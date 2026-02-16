@@ -1,12 +1,13 @@
-import PropTypes from 'prop-types'
+﻿import PropTypes from 'prop-types'
 import { Image } from '../../components/Image'
 import { GetTicketButton } from '../components/GetTicketButton'
+import { renderTextWithHighlights } from '../utils/renderTextWithHighlights'
 
-export function LearnSection({ rows }) {
+export function LearnSection({ heading, rows }) {
   return (
     <section className="section learnSection">
       <div className="container">
-        <h2 className="learnHeading"><span className='gradientText'> What You’ll Learn in the Training</span></h2>
+        <h2 className="learnHeading"><span className="gradientText">{heading}</span></h2>
 
         <div className="learnDays">
           {rows.map((day) => (
@@ -20,16 +21,16 @@ export function LearnSection({ rows }) {
                   <h3 className="learnTitle">
                     {day.titleLines.map((line) => (
                       <span className="learnTitle__line gradientText" key={line}>
-                        {line}
+                        {renderTextWithHighlights(line)}
                       </span>
                     ))}
                   </h3>
 
-                  <p className="learnDesc">{day.card.desc}</p>
+                  <p className="learnDesc">{renderTextWithHighlights(day.desc)}</p>
 
                   <ul className="learnBullets">
-                    {day.card.bullets.map((bullet) => (
-                      <li key={bullet}>{bullet}</li>
+                    {day.bullets.map((bullet) => (
+                      <li key={bullet}>{renderTextWithHighlights(bullet)}</li>
                     ))}
                   </ul>
                 </div>
@@ -64,6 +65,7 @@ export function LearnSection({ rows }) {
 }
 
 LearnSection.propTypes = {
+  heading: PropTypes.string.isRequired,
   rows: PropTypes.arrayOf(
     PropTypes.shape({
       number: PropTypes.string.isRequired,
@@ -72,10 +74,8 @@ LearnSection.propTypes = {
       reverse: PropTypes.bool,
       cta: PropTypes.bool,
       imageMobile: PropTypes.string,
-      card: PropTypes.shape({
-        desc: PropTypes.string.isRequired,
-        bullets: PropTypes.arrayOf(PropTypes.string).isRequired,
-      }).isRequired,
+      desc: PropTypes.string.isRequired,
+      bullets: PropTypes.arrayOf(PropTypes.string).isRequired,
     })
   ).isRequired,
 }

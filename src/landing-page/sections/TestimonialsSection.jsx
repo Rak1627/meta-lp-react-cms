@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect, useCallback } from 'react'
+﻿import { useMemo, useState, useEffect, useCallback } from 'react'
 import PropTypes from 'prop-types'
 
 function TestimonialsMarquee({ images, reverse = false, duration, delay, onImageClick }) {
@@ -57,7 +57,7 @@ function TestimonialsMarquee({ images, reverse = false, duration, delay, onImage
   )
 }
 
-export function TestimonialsSection({ rows }) {
+export function TestimonialsSection({ heading, rows }) {
   const allImages = useMemo(() => {
     const seen = new Set()
     const result = []
@@ -127,7 +127,7 @@ export function TestimonialsSection({ rows }) {
   return (
     <section className="section testimonialsSection">
       <div className="container">
-        <h2 className="testimonialsHeading"><span className='gradientText'> See What Regular People Are Getting With This System</span></h2>
+        <h2 className="testimonialsHeading"><span className="gradientText">{heading}</span></h2>
 
         <div className="testimonialsRows">
           <TestimonialsMarquee images={rows[0]} duration="85s" onImageClick={openImage} />
@@ -186,6 +186,6 @@ TestimonialsMarquee.propTypes = {
 }
 
 TestimonialsSection.propTypes = {
+  heading: PropTypes.string.isRequired,
   rows: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
 }
-

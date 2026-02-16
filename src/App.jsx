@@ -1,11 +1,24 @@
-import { useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { TypeformModal } from './components/TypeformModal'
 import { LandingPage } from './landing-page/LandingPage'
 import { TYPEFORM_GENERAL_ID, TYPEFORM_VIP_ID } from './landing-page/config'
+import landingContent from './content/landing.json'
 import './App.css'
 
 function App() {
   const [typeform, setTypeform] = useState(null)
+
+  useEffect(() => {
+    const { seo } = landingContent
+    if (seo?.title) {
+      document.title = seo.title
+    }
+
+    if (seo?.description) {
+      const meta = document.querySelector('meta[name="description"]')
+      if (meta) meta.setAttribute('content', seo.description)
+    }
+  }, [])
 
   const openTypeform = (kind) => {
     if (kind === 'general') {
@@ -33,4 +46,3 @@ function App() {
 }
 
 export default App
-
